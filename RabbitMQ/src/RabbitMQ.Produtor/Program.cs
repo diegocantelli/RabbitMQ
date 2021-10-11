@@ -1,6 +1,7 @@
 ﻿using RabbitMQ.Client;
 using System;
 using System.Text;
+using System.Threading;
 
 namespace RabbitMQ.Produtor
 {
@@ -21,18 +22,23 @@ namespace RabbitMQ.Produtor
                     autoDelete: false,
                     arguments: null);
 
-                string message = "Hello World";
-                var body = Encoding.UTF8.GetBytes(message);
+                int cont = 0;
+                while (true)
+                {
+                    string message = $"{cont++} Hello World";
+                    var body = Encoding.UTF8.GetBytes(message);
 
-                channel.BasicPublish(exchange: "",
-                    routingKey: "qwebapp",
-                    basicProperties: null,
-                    body: body);
-                Console.WriteLine(" x Sent {0}", message);
+                    channel.BasicPublish(exchange: "",
+                        routingKey: "qwebapp",
+                        basicProperties: null,
+                        body: body);
+                    Console.WriteLine(" x Sent {0}", message);
+                    Thread.Sleep(200);
+                }
             }
 
-            Console.WriteLine(" Press Enter to exit");
-            Console.ReadLine();
+            //Console.WriteLine(" Press Enter to exit");
+            //Console.ReadLine();
         }
     }
 }

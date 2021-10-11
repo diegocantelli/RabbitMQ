@@ -25,31 +25,19 @@ namespace RabbitMQ.Consumidor
                 // ea.Body estará o conteúdo enviado pelo produtor em bytes
                 consumer.Received += (model, ea) =>
                 {
-                    try
-                    {
-                        var body = ea.Body;
-                        var message = Encoding.UTF8.GetString(body);
-                        Console.WriteLine(" [x] Received {0}", message);
-
-                        // após execução da regra de negócio ele marca a mensagem como entregue
-                        channel.BasicAck(ea.DeliveryTag, true);
-                    }
-                    catch (Exception ex)
-                    {
-                        // caso ocorra alguma exceção no processamento da msg, ele não confirma a msg como entregue
-                        channel.BasicNack(ea.DeliveryTag, false, true);
-                    }
+                    var body = ea.Body;
+                    var message = Encoding.UTF8.GetString(body);
+                    Console.WriteLine(" [x] Received {0}", message);
                 };
 
                 //autoAck: true -> se tiver como true toda vez que ele obter um item da fila ele irá confirmar
                 // não recomendado, pois caso ocorra alguma exceção, esta mensagem será perdida
                 channel.BasicConsume(queue: "qwebapp",
-                    autoAck: true,
-                    consumer: consumer);
+                                     autoAck: true,
+                                     consumer: consumer);
+                //Console.WriteLine("Press Enter to exit");
+                Console.ReadLine();
             }
-
-            Console.WriteLine("Press Enter to exit");
-            Console.ReadLine();
         }
     }
 }
