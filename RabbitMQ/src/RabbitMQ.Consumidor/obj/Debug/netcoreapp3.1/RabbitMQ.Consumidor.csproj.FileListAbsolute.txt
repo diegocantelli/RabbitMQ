@@ -1,0 +1,15 @@
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\bin\Debug\netcoreapp3.1\RabbitMQ.Consumidor.exe
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\bin\Debug\netcoreapp3.1\RabbitMQ.Consumidor.deps.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\bin\Debug\netcoreapp3.1\RabbitMQ.Consumidor.runtimeconfig.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\bin\Debug\netcoreapp3.1\RabbitMQ.Consumidor.runtimeconfig.dev.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\bin\Debug\netcoreapp3.1\RabbitMQ.Consumidor.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\bin\Debug\netcoreapp3.1\RabbitMQ.Consumidor.pdb
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\obj\Debug\netcoreapp3.1\RabbitMQ.Consumidor.csproj.AssemblyReference.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\obj\Debug\netcoreapp3.1\RabbitMQ.Consumidor.AssemblyInfoInputs.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\obj\Debug\netcoreapp3.1\RabbitMQ.Consumidor.AssemblyInfo.cs
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\obj\Debug\netcoreapp3.1\RabbitMQ.Consumidor.csproj.CoreCompileInputs.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\obj\Debug\netcoreapp3.1\RabbitMQ.Consumidor.csproj.CopyComplete
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\obj\Debug\netcoreapp3.1\RabbitMQ.Consumidor.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\obj\Debug\netcoreapp3.1\RabbitMQ.Consumidor.pdb
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Consumidor\obj\Debug\netcoreapp3.1\RabbitMQ.Consumidor.genruntimeconfig.cache
