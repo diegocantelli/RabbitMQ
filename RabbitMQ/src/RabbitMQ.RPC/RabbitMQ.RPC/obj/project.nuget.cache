@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AaXlHjbestTdUbNtRGRU+MhiAqb84Kacj9krWorCifYXAAtHmkny3PlnebbKwjaybex0h/3DzhTtygzLd5icJQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\src\\RabbitMQ.RPC\\RabbitMQ.RPC\\RabbitMQ.RPC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pc-cantelli\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}
