@@ -1,0 +1,15 @@
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\bin\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.exe
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\bin\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.deps.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\bin\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.runtimeconfig.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\bin\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.runtimeconfig.dev.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\bin\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\bin\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.pdb
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\obj\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.csproj.AssemblyReference.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\obj\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.AssemblyInfoInputs.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\obj\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.AssemblyInfo.cs
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\obj\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.csproj.CoreCompileInputs.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\obj\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.csproj.CopyComplete
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\obj\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\obj\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.pdb
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.Api.Worker\obj\Debug\netcoreapp3.1\RabbitMQ.Api.Worker.genruntimeconfig.cache
