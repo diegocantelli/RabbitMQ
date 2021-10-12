@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using RabbitMQ.Api.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +12,24 @@ namespace RabbitMQ.Api.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
-        public IActionResult Index()
+        private readonly ILogger<Order> _logger;
+
+        public OrderController(ILogger<Order> logger)
         {
-            return Ok();
+            _logger = logger;
+        }
+        public IActionResult InsertOrder(Order order)
+        {
+            try
+            {
+                return Accepted(order);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Erro ao tentar criar um novo pedido", ex);
+
+                return new StatusCodeResult(500);
+            }
         }
     }
 }
