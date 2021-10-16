@@ -19,6 +19,7 @@ namespace RabbitMQ.MultiplosProdutores
 
                 var queueName = "order";
 
+                // Os channels podem ser entendidos como diferentes Threads
                 var channel1 = CreateChannel(connection);
                 var channel2 = CreateChannel(connection);
 
