@@ -1,0 +1,14 @@
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\bin\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.exe
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\bin\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.deps.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\bin\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.runtimeconfig.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\bin\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.runtimeconfig.dev.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\bin\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\bin\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.pdb
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\obj\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.AssemblyInfoInputs.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\obj\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.AssemblyInfo.cs
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\obj\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.csproj.CoreCompileInputs.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\obj\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.csproj.CopyComplete
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\obj\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\obj\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.pdb
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\src\RabbitMQ.MultiplosConsumidores\obj\Debug\netcoreapp3.1\RabbitMQ.MultiplosConsumidores.genruntimeconfig.cache

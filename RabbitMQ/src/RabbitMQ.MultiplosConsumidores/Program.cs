@@ -45,12 +45,24 @@ namespace RabbitMQ.MultiplosConsumidores
             var consumer = new EventingBasicConsumer(channel);
             consumer.Received += (model, ea) =>
             {
-                var body = ea.Body;
-                var message = Encoding.UTF8.GetString(body);
-                Console.WriteLine($" Channel: {channel.ChannelNumber} - Worker  {worker} Received {message}");
+                try
+                {
+                    var body = ea.Body;
+                    var message = Encoding.UTF8.GetString(body);
+                    Console.WriteLine($" Channel: {channel.ChannelNumber} - Worker  {worker} Received {message}");
+
+                    throw new Exception("Erro de negócio");
+                    // confirma a entrega de uma mensagem específica através do deleivreyTag
+                    channel.BasicAck(ea.DeliveryTag, false);
+                }
+                catch (Exception)
+                {
+                    channel.BasicNack(ea.DeliveryTag, false, requeue: true);
+                }
             };
 
-            channel.BasicConsume(queue: queue, autoAck: true, consumer: consumer);
+            // autoAck: indica que todas as mensagens foram entregues ao consumidor
+            channel.BasicConsume(queue: queue, autoAck: false, consumer: consumer);
 
             Console.ReadLine();
         }
