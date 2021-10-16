@@ -11,23 +11,36 @@ namespace RabbitMQ.MultiplosConsumidores
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
             using (var connection = factory.CreateConnection())
-            using (var channel = connection.CreateModel())
             {
-                channel.QueueDeclare(queue: "order",
-                    durable: false,
-                    exclusive: false,
-                    autoDelete: false,
-                    arguments: null);
+                for (int i = 0; i < 2; i++)
+                {
+                    var channel = CreateChannel(connection);
 
-                // no caso de consumidores, múltiplos consumidores podem compartilhar o mesmo channel e consequentemente
-                // a mesma connection
-                BuildWorker(channel, "Worker 1", "order");
-                BuildWorker(channel, "Worker 1", "order");
+                    channel.QueueDeclare(queue: "order",
+                        durable: false,
+                        exclusive: false,
+                        autoDelete: false,
+                        arguments: null);
+
+                    for (int j = 0; j < 2; i++)
+                    {
+                        // no caso de consumidores, múltiplos consumidores podem compartilhar o mesmo channel e consequentemente
+                        // a mesma connection
+                        BuildWorkerAndRun(channel, $"Worker {j}", "order");
+
+                    }
+                }
             }
-            
         }
 
-        public static void BuildWorker(IModel channel, string worker, string queue)
+        public static IModel CreateChannel(IConnection connection)
+        {
+            var channel = connection.CreateModel();
+
+            return channel;
+        }
+
+        public static void BuildWorkerAndRun(IModel channel, string worker, string queue)
         {
             var consumer = new EventingBasicConsumer(channel);
             consumer.Received += (model, ea) =>
