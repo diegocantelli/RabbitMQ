@@ -13,7 +13,7 @@ namespace RabbitMQ.MultiplosConsumidores
             using (var connection = factory.CreateConnection())
             {
                 for (int i = 0; i < 2; i++)
-                {
+                { 
                     var channel = CreateChannel(connection);
 
                     channel.QueueDeclare(queue: "order",
@@ -47,7 +47,7 @@ namespace RabbitMQ.MultiplosConsumidores
             {
                 var body = ea.Body;
                 var message = Encoding.UTF8.GetString(body);
-                Console.WriteLine($" {worker} Received {message}");
+                Console.WriteLine($" Channel: {channel.ChannelNumber} - Worker  {worker} Received {message}");
             };
 
             channel.BasicConsume(queue: queue, autoAck: true, consumer: consumer);
