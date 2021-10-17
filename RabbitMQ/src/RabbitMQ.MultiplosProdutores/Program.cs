@@ -36,18 +36,20 @@ namespace RabbitMQ.MultiplosProdutores
             var channel = connection.CreateModel();
 
             channel.QueueDeclare(queue: "order", durable: false, exclusive: false, autoDelete: false, arguments: null);
-            channel.QueueDeclare(queue: "logs", durable: false, exclusive: false, autoDelete: false, arguments: null);
+            //channel.QueueDeclare(queue: "logs", durable: false, exclusive: false, autoDelete: false, arguments: null);
             channel.QueueDeclare(queue: "finance_orders", durable: false, exclusive: false, autoDelete: false, arguments: null);
 
             // declaração do exchange que será responsável por direcionar as mensagens de uma fila para outra fila
             // fanout -> tipo que irá copiar as mensagens 
-            channel.ExchangeDeclare("order", type: "fanout");
+            //channel.ExchangeDeclare("order", type: "fanout");
+
+            channel.ExchangeDeclare("order", type: "direct");
 
 
             // Aqui é feito o link entre as filas e o exchange
-            channel.QueueBind("order", exchange: "order", routingKey: "");
-            channel.QueueBind("logs", exchange: "order", routingKey: "");
-            channel.QueueBind("finance_orders", exchange: "order", routingKey: "");
+            channel.QueueBind("order", exchange: "order", routingKey: "order_new");
+            channel.QueueBind("logs", exchange: "order", routingKey: "order_upd");
+            channel.QueueBind("finance_orders", exchange: "order", routingKey: "order_new");
 
             return channel;
         }
