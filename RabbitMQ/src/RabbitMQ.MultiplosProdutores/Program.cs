@@ -21,11 +21,11 @@ namespace RabbitMQ.MultiplosProdutores
 
                 // Os channels podem ser entendidos como diferentes Threads
                 var channel1 = CreateChannel(connection);
-                var channel2 = CreateChannel(connection);
+                //var channel2 = CreateChannel(connection);
 
                 // Os publishers compartilham a conexão, mas não os channels
                 BuildPublishers(channel1, queueName, "Produtor1");
-                BuildPublishers(channel2, queueName, "Produtor2");
+                //BuildPublishers(channel2, queueName, "Produtor2");
                 Console.ReadLine();
             
             }
@@ -34,6 +34,20 @@ namespace RabbitMQ.MultiplosProdutores
         public static IModel CreateChannel(IConnection connection)
         {
             var channel = connection.CreateModel();
+
+            channel.QueueDeclare(queue: "order", durable: false, exclusive: false, autoDelete: false, arguments: null);
+            channel.QueueDeclare(queue: "logs", durable: false, exclusive: false, autoDelete: false, arguments: null);
+            channel.QueueDeclare(queue: "finance_orders", durable: false, exclusive: false, autoDelete: false, arguments: null);
+
+            // declaração do exchange que será responsável por direcionar as mensagens de uma fila para outra fila
+            // fanout -> tipo que irá copiar as mensagens 
+            channel.ExchangeDeclare("order", type: "fanout");
+
+
+            // Aqui é feito o link entre as filas e o exchange
+            channel.QueueBind("order", exchange: "order", routingKey: "");
+            channel.QueueBind("logs", exchange: "order", routingKey: "");
+            channel.QueueBind("finance_orders", exchange: "order", routingKey: "");
 
             return channel;
         }
@@ -55,8 +69,9 @@ namespace RabbitMQ.MultiplosProdutores
                     string message = $" {publisherName}: Order number {cont++}";
                     var body = Encoding.UTF8.GetBytes(message);
                      
-                    channel.BasicPublish(exchange: "",
-                        routingKey: queue,
+                    // Aqui é definido o exchange
+                    channel.BasicPublish(exchange: "order",
+                        routingKey: "",
                         basicProperties: null,
                         body: body);
                     Console.WriteLine(" x Sent {0}", message);
