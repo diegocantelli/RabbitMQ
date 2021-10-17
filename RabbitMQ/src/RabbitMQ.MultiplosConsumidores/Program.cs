@@ -42,6 +42,11 @@ namespace RabbitMQ.MultiplosConsumidores
 
         public static void BuildWorkerAndRun(IModel channel, string worker, string queue)
         {
+            // prefetchCount -> Aplica o balanceamento de 3 em 3 mensagens, distribuindo as mensagens da fila de forma uniforme entre
+            // os consumidores
+            // global -> false: distribui as msgs com base nos consumidores. true: distribui as mensagens por channel
+            channel.BasicQos(0, prefetchCount:3, global: false);
+
             var consumer = new EventingBasicConsumer(channel);
             consumer.Received += (model, ea) =>
             {
