@@ -21,6 +21,9 @@ namespace RabbitMQ.PublisherConfirmation
                 channel.BasicAcks += Channel_BasicAcks;
                 channel.BasicNacks += Channel_BasicNacks;
 
+                // caso não seja possível processar a msg por algum motivo, a mensagem será devolvida.
+                channel.BasicReturn += Channel_BasicReturn;
+
                 // criacao da fila
                 channel.QueueDeclare(queue: "order",
                     durable: false,
@@ -35,9 +38,16 @@ namespace RabbitMQ.PublisherConfirmation
                     var body = Encoding.UTF8.GetBytes(message);
 
                     channel.BasicPublish(exchange: "",
-                        routingKey: "order",
+                        routingKey: "ordersss",
                         basicProperties: null,
-                        body: body);
+                        body: body,
+                        //mandatory: garante que o nome da fila seja válido
+                        mandatory: true);
+
+                    // Aguarda a confirmação de recebimento da msg por 2 segundos, caso não ocorra em 2 segundos,
+                    // será lançada uma exception
+                    channel.WaitForConfirms(new TimeSpan(0, 0, seconds: 2));
+
                     Console.WriteLine(" x Sent {0}", message);
                     Thread.Sleep(200);
 
@@ -45,6 +55,11 @@ namespace RabbitMQ.PublisherConfirmation
                     Console.ReadKey();
                 }
             }
+        }
+
+        private static void Channel_BasicReturn(object sender, Client.Events.BasicReturnEventArgs e)
+        {
+            Console.WriteLine($"{DateTime.UtcNow} -> Basic Return: {e.Body}");
         }
 
         private static void Channel_BasicNacks(object sender, Client.Events.BasicNackEventArgs e)
