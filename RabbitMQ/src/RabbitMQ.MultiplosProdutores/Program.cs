@@ -68,7 +68,8 @@ namespace RabbitMQ.MultiplosProdutores
                 args.Add("x-message-ttl", 20000);
 
                 channel.QueueDeclare(queue: queue,
-                    durable: false,
+                    // este parâmetro indica se a fila irá ser "persistida" mesmo após o serviço do rabbit ter sido parado
+                    durable: true,
                     exclusive: false,
                     autoDelete: false,
                     // aplicando os argumentos de ttl
@@ -78,6 +79,9 @@ namespace RabbitMQ.MultiplosProdutores
                 var props = channel.CreateBasicProperties();
                 props.Expiration = "10000";
 
+                // indicando que as msgs deverão ser persistidas na fila mesmo após o serviço do rabbit ter sido parado
+                props.Persistent = true;
+
                 while (true)
                 {
                     string message = $" {publisherName}: Order number {cont++}";
@@ -86,7 +90,7 @@ namespace RabbitMQ.MultiplosProdutores
                     // Aqui é definido o exchange
                     channel.BasicPublish(exchange: "order",
                         routingKey: "",
-                        basicProperties: null,
+                        basicProperties: props,
                         body: body);
                     Console.WriteLine(" x Sent {0}", message);
                     Thread.Sleep(200);
