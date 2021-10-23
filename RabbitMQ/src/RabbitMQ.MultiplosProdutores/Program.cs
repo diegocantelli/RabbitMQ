@@ -39,6 +39,8 @@ namespace RabbitMQ.MultiplosProdutores
             //channel.QueueDeclare(queue: "logs", durable: false, exclusive: false, autoDelete: false, arguments: null);
             channel.QueueDeclare(queue: "finance_orders", durable: false, exclusive: false, autoDelete: false, arguments: null);
 
+            
+
             // declaração do exchange que será responsável por direcionar as mensagens de uma fila para outra fila
             // fanout -> tipo que irá copiar as mensagens 
             //channel.ExchangeDeclare("order", type: "fanout");
@@ -66,6 +68,10 @@ namespace RabbitMQ.MultiplosProdutores
                     autoDelete: false,
                     arguments: null);
 
+                // definindo um tempo de expiração da msg
+                var props = channel.CreateBasicProperties();
+                props.Expiration = "10000";
+
                 while (true)
                 {
                     string message = $" {publisherName}: Order number {cont++}";
@@ -74,7 +80,8 @@ namespace RabbitMQ.MultiplosProdutores
                     // Aqui é definido o exchange
                     channel.BasicPublish(exchange: "order",
                         routingKey: "",
-                        basicProperties: null,
+                        // setando propriedades de TTL
+                        basicProperties: props,
                         body: body);
                     Console.WriteLine(" x Sent {0}", message);
                     Thread.Sleep(200);
