@@ -1,0 +1,15 @@
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\bin\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.exe
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\bin\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.deps.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\bin\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.runtimeconfig.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\bin\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.runtimeconfig.dev.json
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\bin\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\bin\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.pdb
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\obj\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.csproj.AssemblyReference.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\obj\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.AssemblyInfoInputs.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\obj\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.AssemblyInfo.cs
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\obj\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.csproj.CoreCompileInputs.cache
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\obj\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.csproj.CopyComplete
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\obj\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.dll
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\obj\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.pdb
+C:\Users\pc-cantelli\Documents\Programação 2018\RabbitMQ\RabbitMQ\RabbitMQ.PublisherConfirmation\obj\Debug\netcoreapp3.1\RabbitMQ.PublisherConfirmation.genruntimeconfig.cache
