@@ -1,5 +1,6 @@
 ﻿using RabbitMQ.Client;
 using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -62,11 +63,16 @@ namespace RabbitMQ.MultiplosProdutores
             {
                 int cont = 0;
 
+                // aplicando ttl para todas as msgs na fila
+                var args = new Dictionary<string, object>();
+                args.Add("x-message-ttl", 20000);
+
                 channel.QueueDeclare(queue: queue,
                     durable: false,
                     exclusive: false,
                     autoDelete: false,
-                    arguments: null);
+                    // aplicando os argumentos de ttl
+                    arguments: args);
 
                 // definindo um tempo de expiração da msg
                 var props = channel.CreateBasicProperties();
@@ -80,8 +86,7 @@ namespace RabbitMQ.MultiplosProdutores
                     // Aqui é definido o exchange
                     channel.BasicPublish(exchange: "order",
                         routingKey: "",
-                        // setando propriedades de TTL
-                        basicProperties: props,
+                        basicProperties: null,
                         body: body);
                     Console.WriteLine(" x Sent {0}", message);
                     Thread.Sleep(200);
