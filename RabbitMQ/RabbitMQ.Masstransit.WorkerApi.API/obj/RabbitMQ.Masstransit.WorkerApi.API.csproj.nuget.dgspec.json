@@ -47,6 +47,18 @@
             "MassTransit": {
               "target": "Package",
               "version": "[7.2.3, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.3, )"
+            },
+            "MassTransit.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.2.3, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.2.3, )"
             }
           },
           "imports": [
