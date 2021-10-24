@@ -14,15 +14,6 @@
           "lib/netstandard2.0/Automatonymous.dll": {}
         }
       },
-      "Baseline/1.5.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Baseline.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Baseline.dll": {}
-        }
-      },
       "GreenPipes/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -34,26 +25,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/GreenPipes.dll": {}
-        }
-      },
-      "Marten/3.13.5": {
-        "type": "package",
-        "dependencies": {
-          "Baseline": "1.5.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "[2.0.0, 6.0.0)",
-          "Newtonsoft.Json": "11.0.2",
-          "Npgsql": "[4.1.6, 4.2.0)",
-          "Npgsql.Json.NET": "[4.1.6, 4.2.0)",
-          "Remotion.Linq": "2.2.0",
-          "System.Memory": "4.5.3",
-          "System.Reflection.Emit.Lightweight": "4.6.0",
-          "System.Threading.Tasks.Dataflow": "4.10.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Marten.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Marten.dll": {}
         }
       },
       "MassTransit/7.2.3": {
@@ -79,19 +50,6 @@
           "lib/netstandard2.0/MassTransit.dll": {}
         }
       },
-      "MassTransit.Marten/7.2.3": {
-        "type": "package",
-        "dependencies": {
-          "Marten": "3.13.5",
-          "MassTransit": "7.2.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/MassTransit.MartenIntegration.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/MassTransit.MartenIntegration.dll": {}
-        }
-      },
       "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
         "type": "package",
         "compile": {
@@ -99,15 +57,6 @@
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/2.1.1": {
@@ -226,53 +175,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
-        }
-      },
-      "Npgsql/4.1.6": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.6.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Npgsql.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Npgsql.dll": {}
-        }
-      },
-      "Npgsql.Json.NET/4.1.6": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
-          "Npgsql": "4.1.6"
-        },
-        "compile": {
-          "lib/netstandard2.0/Npgsql.Json.NET.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Npgsql.Json.NET.dll": {}
-        }
-      },
-      "Remotion.Linq/2.2.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Linq": "4.1.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.Linq.Queryable": "4.0.1",
-          "System.ObjectModel": "4.0.12",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Threading": "4.0.11"
-        },
-        "compile": {
-          "lib/netstandard1.0/Remotion.Linq.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/Remotion.Linq.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -744,34 +646,6 @@
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
-        }
-      },
-      "System.Linq.Queryable/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Linq": "4.1.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0"
-        },
-        "compile": {
-          "ref/netstandard1.0/System.Linq.Queryable.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Linq.Queryable.dll": {}
-        }
-      },
-      "System.Memory/4.5.3": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Net.Http/4.3.0": {
@@ -1359,15 +1233,6 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
-      "System.Threading.Tasks.Dataflow/4.10.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll": {}
-        }
-      },
       "System.Threading.Tasks.Extensions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1467,21 +1332,6 @@
         "lib/netstandard2.0/Automatonymous.xml"
       ]
     },
-    "Baseline/1.5.0": {
-      "sha512": "q1nVtlrl0VHc01X2lgGdeFht0P67RnBz+Xfpf66IM2FtyFgeSvtkm1IRc88V9ACu4uzRKOYLjzS5yYUTqg7S2Q==",
-      "type": "package",
-      "path": "baseline/1.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "baseline.1.5.0.nupkg.sha512",
-        "baseline.nuspec",
-        "lib/net451/Baseline.dll",
-        "lib/net46/Baseline.dll",
-        "lib/netstandard1.3/Baseline.dll",
-        "lib/netstandard2.0/Baseline.dll"
-      ]
-    },
     "GreenPipes/4.0.1": {
       "sha512": "nc90y7DAhj8isRbqioVQF3/ExztBZSXRrRoplZvEjckNFC5wP1r+ssfsgl8BptWdQrnMdgkOYhQ6EnHetyFW1Q==",
       "type": "package",
@@ -1495,21 +1345,6 @@
         "lib/netstandard2.0/GreenPipes.xml"
       ]
     },
-    "Marten/3.13.5": {
-      "sha512": "5gGbA8PFwd77jV33nz1GpJRR3FmTq/8P1BYR9xLcfV6HFiEgHGkT4aIzdEr8xz9ay8pEj5hIYuQLMKAENVTxbw==",
-      "type": "package",
-      "path": "marten/3.13.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net461/Marten.dll",
-        "lib/net461/Marten.xml",
-        "lib/netstandard2.0/Marten.dll",
-        "lib/netstandard2.0/Marten.xml",
-        "marten.3.13.5.nupkg.sha512",
-        "marten.nuspec"
-      ]
-    },
     "MassTransit/7.2.3": {
       "sha512": "fKhayfcKiEWlttQRHxWKELoGP1mmqAFhwxnrDc/B5mfWcDJiRvr6g07aadkTl6qxE8KPcR3Vrn3Rr55ODLgnrg==",
       "type": "package",
@@ -1521,20 +1356,6 @@
         "lib/netstandard2.0/MassTransit.xml",
         "masstransit.7.2.3.nupkg.sha512",
         "masstransit.nuspec",
-        "mt-logo-small.png"
-      ]
-    },
-    "MassTransit.Marten/7.2.3": {
-      "sha512": "hxrVF+r2/it6QEKzOvgp/DaTZiWrfBpuN9/ln3QEGAjnvRo3su47u/10kJ9uU+LIU9FxluLS8m/KT+kyDoaaJQ==",
-      "type": "package",
-      "path": "masstransit.marten/7.2.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/MassTransit.MartenIntegration.dll",
-        "lib/netstandard2.0/MassTransit.MartenIntegration.xml",
-        "masstransit.marten.7.2.3.nupkg.sha512",
-        "masstransit.marten.nuspec",
         "mt-logo-small.png"
       ]
     },
@@ -1558,19 +1379,6 @@
         "microsoft.bcl.asyncinterfaces.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
-      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
-      "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
-        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.Logging.Abstractions/2.1.1": {
@@ -1725,63 +1533,6 @@
         "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
-      ]
-    },
-    "Npgsql/4.1.6": {
-      "sha512": "JXB41gWNXTOu+d9AfqgGLMY1B6OIuTOiX43PypKun5e4XWjKgzINwA0oryBm5ewAJrZGFQbhllxvdPXgToi2/Q==",
-      "type": "package",
-      "path": "npgsql/4.1.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net461/Npgsql.dll",
-        "lib/net461/Npgsql.xml",
-        "lib/netcoreapp3.0/Npgsql.dll",
-        "lib/netcoreapp3.0/Npgsql.xml",
-        "lib/netstandard2.0/Npgsql.dll",
-        "lib/netstandard2.0/Npgsql.xml",
-        "lib/netstandard2.1/Npgsql.dll",
-        "lib/netstandard2.1/Npgsql.xml",
-        "npgsql.4.1.6.nupkg.sha512",
-        "npgsql.nuspec",
-        "postgresql.png"
-      ]
-    },
-    "Npgsql.Json.NET/4.1.6": {
-      "sha512": "NhnL/As2j5lgjdVoAbzG0lOlobcpE69/NzgzBDuE+q9E7kY6bIOljcJ87DRCSvMxcuC4EEUxUPCNbvXRRM9WEA==",
-      "type": "package",
-      "path": "npgsql.json.net/4.1.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net461/Npgsql.Json.NET.dll",
-        "lib/net461/Npgsql.Json.NET.xml",
-        "lib/netstandard2.0/Npgsql.Json.NET.dll",
-        "lib/netstandard2.0/Npgsql.Json.NET.xml",
-        "npgsql.json.net.4.1.6.nupkg.sha512",
-        "npgsql.json.net.nuspec",
-        "postgresql.png"
-      ]
-    },
-    "Remotion.Linq/2.2.0": {
-      "sha512": "fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
-      "type": "package",
-      "path": "remotion.linq/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/Remotion.Linq.XML",
-        "lib/net35/Remotion.Linq.dll",
-        "lib/net40/Remotion.Linq.XML",
-        "lib/net40/Remotion.Linq.dll",
-        "lib/net45/Remotion.Linq.XML",
-        "lib/net45/Remotion.Linq.dll",
-        "lib/netstandard1.0/Remotion.Linq.dll",
-        "lib/netstandard1.0/Remotion.Linq.xml",
-        "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll",
-        "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.xml",
-        "remotion.linq.2.2.0.nupkg.sha512",
-        "remotion.linq.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -3062,85 +2813,6 @@
         "runtimes/aot/lib/netcore50/System.Linq.Expressions.dll",
         "system.linq.expressions.4.3.0.nupkg.sha512",
         "system.linq.expressions.nuspec"
-      ]
-    },
-    "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
-      "type": "package",
-      "path": "system.linq.queryable/4.0.1",
-      "files": [
-        ".nupkg.metadata",
-        "System.Linq.Queryable.4.0.1.nupkg.sha512",
-        "System.Linq.Queryable.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/monoandroid10/_._",
-        "lib/monotouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/System.Linq.Queryable.dll",
-        "lib/netstandard1.3/System.Linq.Queryable.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/monoandroid10/_._",
-        "ref/monotouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Linq.Queryable.dll",
-        "ref/netcore50/System.Linq.Queryable.xml",
-        "ref/netcore50/de/System.Linq.Queryable.xml",
-        "ref/netcore50/es/System.Linq.Queryable.xml",
-        "ref/netcore50/fr/System.Linq.Queryable.xml",
-        "ref/netcore50/it/System.Linq.Queryable.xml",
-        "ref/netcore50/ja/System.Linq.Queryable.xml",
-        "ref/netcore50/ko/System.Linq.Queryable.xml",
-        "ref/netcore50/ru/System.Linq.Queryable.xml",
-        "ref/netcore50/zh-hans/System.Linq.Queryable.xml",
-        "ref/netcore50/zh-hant/System.Linq.Queryable.xml",
-        "ref/netstandard1.0/System.Linq.Queryable.dll",
-        "ref/netstandard1.0/System.Linq.Queryable.xml",
-        "ref/netstandard1.0/de/System.Linq.Queryable.xml",
-        "ref/netstandard1.0/es/System.Linq.Queryable.xml",
-        "ref/netstandard1.0/fr/System.Linq.Queryable.xml",
-        "ref/netstandard1.0/it/System.Linq.Queryable.xml",
-        "ref/netstandard1.0/ja/System.Linq.Queryable.xml",
-        "ref/netstandard1.0/ko/System.Linq.Queryable.xml",
-        "ref/netstandard1.0/ru/System.Linq.Queryable.xml",
-        "ref/netstandard1.0/zh-hans/System.Linq.Queryable.xml",
-        "ref/netstandard1.0/zh-hant/System.Linq.Queryable.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._"
-      ]
-    },
-    "System.Memory/4.5.3": {
-      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
-      "type": "package",
-      "path": "system.memory/4.5.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.1/System.Memory.dll",
-        "lib/netstandard1.1/System.Memory.xml",
-        "lib/netstandard2.0/System.Memory.dll",
-        "lib/netstandard2.0/System.Memory.xml",
-        "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.3.nupkg.sha512",
-        "system.memory.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.Net.Http/4.3.0": {
@@ -4977,29 +4649,6 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "System.Threading.Tasks.Dataflow/4.10.0": {
-      "sha512": "WPI32A1Tf838Yal/XHWdfKrtY/gQxi3MZG2ERC5ljI6RI1YV7Ype1nxc043pv8A8rDLeXmzs4LxxWfEguJ2Dug==",
-      "type": "package",
-      "path": "system.threading.tasks.dataflow/4.10.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netstandard1.0/System.Threading.Tasks.Dataflow.dll",
-        "lib/netstandard1.0/System.Threading.Tasks.Dataflow.xml",
-        "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll",
-        "lib/netstandard1.1/System.Threading.Tasks.Dataflow.xml",
-        "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll",
-        "lib/netstandard2.0/System.Threading.Tasks.Dataflow.xml",
-        "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll",
-        "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.xml",
-        "system.threading.tasks.dataflow.4.10.0.nupkg.sha512",
-        "system.threading.tasks.dataflow.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.Threading.Tasks.Extensions/4.3.0": {
       "sha512": "npvJkVKl5rKXrtl1Kkm6OhOUaYGEiF9wFbppFRWSMoApKzt2PiPHT2Bb8a5sAWxprvdOAtvaARS9QYMznEUtug==",
       "type": "package",
@@ -5261,7 +4910,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "MassTransit.Marten >= 7.2.3"
+      "MassTransit >= 7.2.3"
     ]
   },
   "packageFolders": {
@@ -5271,11 +4920,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\RabbitMQ.PublishInMemory\\RabbitMQ.MassTransit.PublishInMemory.csproj",
-      "projectName": "RabbitMQ.MassTransit.PublishInMemory",
-      "projectPath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\RabbitMQ.PublishInMemory\\RabbitMQ.MassTransit.PublishInMemory.csproj",
+      "projectUniqueName": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\RabbitMQ.Masstransit.WorkerApi.API\\RabbitMQ.Masstransit.WorkerApi.API.csproj",
+      "projectName": "RabbitMQ.Masstransit.WorkerApi.API",
+      "projectPath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\RabbitMQ.Masstransit.WorkerApi.API\\RabbitMQ.Masstransit.WorkerApi.API.csproj",
       "packagesPath": "C:\\Users\\pc-cantelli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\RabbitMQ.PublishInMemory\\obj\\",
+      "outputPath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\RabbitMQ.Masstransit.WorkerApi.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -5308,7 +4957,7 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
-          "MassTransit.Marten": {
+          "MassTransit": {
             "target": "Package",
             "version": "[7.2.3, )"
           }
@@ -5330,6 +4979,9 @@
           }
         ],
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
