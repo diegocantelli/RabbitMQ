@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RPC", "RPC", "{037B064B-1EF9-4882-B9CE-8D2EDBFF06DB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.RPC", "src\RabbitMQ.RPC\RabbitMQ.RPC\RabbitMQ.RPC.csproj", "{4D1A3878-09D1-4E82-8219-DE8B3ACEC4FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.RPC.Cliente", "src\RabbitMQ.RPC\RabbitMQ.RPC\RabbitMQ.RPC.Cliente.csproj", "{4D1A3878-09D1-4E82-8219-DE8B3ACEC4FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Produtor-Consumidor", "Produtor-Consumidor", "{3DA055A3-6E43-4D02-A8F3-14AA112C8C91}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublisherConfirmation", "PublisherConfirmation", "{6F4ED227-7C0E-4AE0-B4FC-4B8B5485B217}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.PublisherConfirmation", "RabbitMQ.PublisherConfirmation\RabbitMQ.PublisherConfirmation.csproj", "{C419D8B2-2F87-4DBF-A5B4-9EE1B8C6A45C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.RPC.Sever", "RabbitMQ.RPC.Sever\RabbitMQ.RPC.Sever.csproj", "{639B551E-D79F-437D-8AA8-168E0F45FB90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{C419D8B2-2F87-4DBF-A5B4-9EE1B8C6A45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C419D8B2-2F87-4DBF-A5B4-9EE1B8C6A45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C419D8B2-2F87-4DBF-A5B4-9EE1B8C6A45C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{639B551E-D79F-437D-8AA8-168E0F45FB90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{639B551E-D79F-437D-8AA8-168E0F45FB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{639B551E-D79F-437D-8AA8-168E0F45FB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{639B551E-D79F-437D-8AA8-168E0F45FB90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{4EB188BB-4F9B-4CAD-8761-23E1E3938193} = {A415CA76-815E-497F-818B-1C4F7B8CDF61}
 		{07B9E5D7-68B5-4F72-A7C5-B3C90EB185A5} = {A415CA76-815E-497F-818B-1C4F7B8CDF61}
 		{C419D8B2-2F87-4DBF-A5B4-9EE1B8C6A45C} = {6F4ED227-7C0E-4AE0-B4FC-4B8B5485B217}
+		{639B551E-D79F-437D-8AA8-168E0F45FB90} = {037B064B-1EF9-4882-B9CE-8D2EDBFF06DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5E170F2-42CE-4185-91FD-549F11544560}
