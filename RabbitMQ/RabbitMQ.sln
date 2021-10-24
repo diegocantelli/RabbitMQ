@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.PublisherConfirmat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.RPC.Sever", "RabbitMQ.RPC.Sever\RabbitMQ.RPC.Sever.csproj", "{639B551E-D79F-437D-8AA8-168E0F45FB90}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MassTransit", "MassTransit", "{B1605E2D-8A1C-42D9-BA8D-1F1E0D681037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.PublishInMemory", "RabbitMQ.PublishInMemory\RabbitMQ.PublishInMemory.csproj", "{D9AA9B8C-F6BA-43DE-A8A2-1F5EE73E4E9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +77,10 @@ Global
 		{639B551E-D79F-437D-8AA8-168E0F45FB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{639B551E-D79F-437D-8AA8-168E0F45FB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{639B551E-D79F-437D-8AA8-168E0F45FB90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9AA9B8C-F6BA-43DE-A8A2-1F5EE73E4E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9AA9B8C-F6BA-43DE-A8A2-1F5EE73E4E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9AA9B8C-F6BA-43DE-A8A2-1F5EE73E4E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9AA9B8C-F6BA-43DE-A8A2-1F5EE73E4E9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +95,7 @@ Global
 		{07B9E5D7-68B5-4F72-A7C5-B3C90EB185A5} = {A415CA76-815E-497F-818B-1C4F7B8CDF61}
 		{C419D8B2-2F87-4DBF-A5B4-9EE1B8C6A45C} = {6F4ED227-7C0E-4AE0-B4FC-4B8B5485B217}
 		{639B551E-D79F-437D-8AA8-168E0F45FB90} = {037B064B-1EF9-4882-B9CE-8D2EDBFF06DB}
+		{D9AA9B8C-F6BA-43DE-A8A2-1F5EE73E4E9A} = {B1605E2D-8A1C-42D9-BA8D-1F1E0D681037}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5E170F2-42CE-4185-91FD-549F11544560}
