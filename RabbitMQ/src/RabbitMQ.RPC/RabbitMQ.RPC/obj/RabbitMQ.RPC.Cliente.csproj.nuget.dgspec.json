@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\src\\RabbitMQ.RPC\\RabbitMQ.RPC\\RabbitMQ.RPC.csproj": {}
+    "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\src\\RabbitMQ.RPC\\RabbitMQ.RPC\\RabbitMQ.RPC.Cliente.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\src\\RabbitMQ.RPC\\RabbitMQ.RPC\\RabbitMQ.RPC.csproj": {
+    "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\src\\RabbitMQ.RPC\\RabbitMQ.RPC\\RabbitMQ.RPC.Cliente.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\src\\RabbitMQ.RPC\\RabbitMQ.RPC\\RabbitMQ.RPC.csproj",
-        "projectName": "RabbitMQ.RPC",
-        "projectPath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\src\\RabbitMQ.RPC\\RabbitMQ.RPC\\RabbitMQ.RPC.csproj",
+        "projectUniqueName": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\src\\RabbitMQ.RPC\\RabbitMQ.RPC\\RabbitMQ.RPC.Cliente.csproj",
+        "projectName": "RabbitMQ.RPC.Cliente",
+        "projectPath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\src\\RabbitMQ.RPC\\RabbitMQ.RPC\\RabbitMQ.RPC.Cliente.csproj",
         "packagesPath": "C:\\Users\\pc-cantelli\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\pc-cantelli\\Documents\\Programação 2018\\RabbitMQ\\RabbitMQ\\src\\RabbitMQ.RPC\\RabbitMQ.RPC\\obj\\",
         "projectStyle": "PackageReference",
